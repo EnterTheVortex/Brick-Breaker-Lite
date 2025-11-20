@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Modular Brick Breaker Game" />
+  <title>Brick Breaker</title>
+
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <!-- Main Menu -->
+  <div id="mainMenu" class="menu">
+    <h1>Brick Breaker</h1>
+    <button id="playBtn">Play</button>
+    <button id="levelSelectBtn">Level Select</button>
+    <button id="settingsBtn">Settings</button>
+  </div>
+
+  <!-- Level Select Menu -->
+  <div id="levelMenu" class="menu" style="display: none;">
+    <h2>Select Level</h2>
+    <div id="levelButtons"></div>
+    <button id="backBtn">Back</button>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas" width="800" height="600" aria-label="Brick Breaker Game Canvas">
+    Your browser does not support the HTML5 canvas tag.
+  </canvas>
+
+  <!-- Sound Effects -->
+  <audio id="bounceSound" src="assets/sounds/bounce.mp3" preload="auto"></audio>
+  <audio id="brickSound" src="assets/sounds/brick.mp3" preload="auto"></audio>
+
+  <!-- Modular Scripts -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
