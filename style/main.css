@@ -1,0 +1,67 @@
+/* Reset and layout */
+body {
+  background: linear-gradient(to bottom, #111 0%, #000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0ff;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  z-index: 10;
+}
+
+.menu button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Canvas styling */
+canvas {
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  box-shadow:
+    0 0 20px #0ff,
+    0 0 40px #00f inset,
+    0 0 60px rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  border: 2px solid #0ff;
+}
+
+/* Pause button styling */
+button#pauseBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #222;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button#pauseBtn:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff;
+}
